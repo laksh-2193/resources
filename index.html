@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Lakshay Kumar Resources - Data Science & Machine Learning Resources
+    </title>
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Access high-quality Data Science, Machine Learning, and GenAI resources from Lakshay Kumar. Free educational materials for AI enthusiasts and professionals."
+    />
+    <meta
+      name="keywords"
+      content="Lakshay Kumar, data science resources, machine learning, GenAI, AI resources, data science education, AI tutorials, AI downloads"
+    />
+    <meta name="author" content="Lakshay Kumar" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://resources.lakshaykumar.tech/" />
+    <meta
+      property="og:title"
+      content="Lakshay Kumar Resources - Data Science & Machine Learning"
+    />
+    <meta
+      property="og:description"
+      content="Access high-quality Data Science, Machine Learning, and GenAI resources from Lakshay Kumar. Free educational materials for AI enthusiasts and professionals."
+    />
+    <meta
+      property="og:image"
+      content="https://resources.lakshaykumar.tech/lakshay-kumar-og-image.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://resources.lakshaykumar.tech/"
+    />
+    <meta property="twitter:title" content="Lakshay Kumar AI Resources" />
+    <meta
+      property="twitter:description"
+      content="Access high-quality Data Science, Machine Learning, and GenAI resources from Lakshay Kumar. Free educational materials for AI enthusiasts."
+    />
+    <meta
+      property="twitter:image"
+      content="https://resources.lakshaykumar.tech/lakshay-kumar-twitter-image.jpg"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://resources.lakshaykumar.tech/" />
+
+    <!-- Stylesheets -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Resources",
+        "name": "Lakshay Kumar Resources",
+        "url": "https://resources.lakshaykumar.tech/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://resources.lakshaykumar.tech/?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Lakshay Kumar ",
+        "url": "https://lakshaykumar.tech/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://resources.lakshaykumar.tech/?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Lakshay Kumar",
+        "url": "https://resources.lakshaykumar.tech/",
+        "jobTitle": "GenAI Engineer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Zato"
+        }
+      }
+    </script>
+    <style>
+      /* Global Styles and Variables */
+      :root {
+        /* Dark Theme (Default) */
+        --primary-color: #6d5dfc;
+        --primary-hover: #5a4af4;
+        --text-color: #e2e8f0;
+        --text-light: #94a3b8;
+        --bg-color: #111827;
+        --bg-light: #1f2937;
+        --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+        --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4),
+          0 2px 4px -1px rgba(0, 0, 0, 0.2);
+        --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5),
+          0 4px 6px -2px rgba(0, 0, 0, 0.3);
+        --border-color: #374151;
+        --radius: 0px; /* No rounded corners */
+        --transition: all 0.3s ease;
+
+        /* Toast variables */
+        --toast-success: #10b981;
+        --toast-error: #ef4444;
+        --toast-info: #3b82f6;
+        --toast-warning: #f59e0b;
+      }
+
+      /* Light Theme Variables */
+      .light-theme {
+        --primary-color: #4f46e5;
+        --primary-hover: #4338ca;
+        --text-color: #1f2937;
+        --text-light: #6b7280;
+        --bg-color: #ffffff;
+        --bg-light: #f9fafb;
+        --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        --border-color: #e5e7eb;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background-color: var(--bg-light);
+        color: var(--text-color);
+        line-height: 1.6;
+        font-weight: 500;
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--primary-color);
+        transition: var(--transition);
+      }
+
+      a:hover {
+        color: var(--primary-hover);
+      }
+
+      button {
+        cursor: pointer;
+        font-weight: 500;
+      }
+
+      /* Header Styles */
+      header {
+        background-color: var(--bg-color);
+        padding: 2rem 0 4rem;
+        box-shadow: var(--shadow-sm);
+        position: relative;
+      }
+
+      .profile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      .profile-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid var(--border-color);
+        box-shadow: var(--shadow-md);
+        margin-bottom: 1.5rem;
+      }
+
+      .profile-name {
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: var(--text-color);
+        margin-bottom: 0.5rem;
+      }
+
+      .profile-subtitle {
+        font-size: 1.2rem;
+        color: var(--text-light);
+        margin-bottom: 1.5rem;
+        max-width: 600px;
+      }
+
+      /* Theme Toggle */
+      .theme-toggle {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+      }
+
+      .theme-toggle-btn {
+        background-color: var(--bg-light);
+        border: 1px solid var(--border-color);
+        color: var(--text-color);
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: var(--transition);
+        font-size: 1.5rem;
+        padding: 0;
+      }
+
+      .theme-toggle-btn:hover {
+        background-color: var(--border-color);
+      }
+
+      .theme-toggle-btn i {
+        display: block;
+        line-height: 1;
+      }
+
+      /* Search Bar */
+      .search-container {
+        max-width: 1400px;
+        margin: -2rem auto 2rem;
+        padding: 0 1rem;
+        position: relative;
+        z-index: 10;
+      }
+
+      .search-bar {
+        display: flex;
+        align-items: center;
+        background-color: var(--bg-color);
+        border: 1px solid var(--border-color);
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        transition: var(--transition);
+        height: 60px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15),
+          0 6px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .search-bar:focus-within {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.15);
+        border-color: var(--primary-color);
+      }
+
+      .search-bar input {
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 1.1rem;
+        padding: 0 1.5rem;
+        height: 60px;
+        background: transparent;
+        color: var(--text-color);
+        font-weight: 500;
+      }
+
+      .search-bar button {
+        background: var(--primary-color);
+        border: none;
+        color: white;
+        font-size: 1.2rem;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Resources Grid */
+      .resources-container {
+        max-width: 1400px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+
+      .section-title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        color: var(--text-color);
+        position: relative;
+        display: inline-block;
+      }
+
+      .section-title::after {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 40px;
+        height: 3px;
+        background-color: var(--primary-color);
+        border-radius: 2px;
+      }
+
+      .resources-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+      }
+
+      .resource-card {
+        background-color: var(--bg-color);
+        box-shadow: var(--shadow-sm);
+        overflow: hidden;
+        transition: var(--transition);
+        border: 1px solid var(--border-color);
+        height: 100%;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .resource-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-md);
+        border-color: var(--primary-color);
+      }
+
+      .resource-img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+      }
+
+      .resource-content {
+        padding: 1.5rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .resource-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+
+      .resource-description {
+        color: var(--text-light);
+        margin-bottom: 1rem;
+        flex: 1;
+      }
+
+      .resource-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .resource-date {
+        color: var(--text-light);
+        font-size: 0.9rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .resource-button {
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 0.75rem 1rem;
+        font-weight: 700;
+        transition: var(--transition);
+        text-align: center;
+        display: block;
+        letter-spacing: 0.5px;
+      }
+
+      .resource-button:hover {
+        background-color: var(--primary-hover);
+      }
+
+      /* Loading State */
+      .loading-container {
+        text-align: center;
+        padding: 2rem;
+      }
+
+      .loading-spinner {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 3px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        border-top-color: var(--primary-color);
+        animation: spin 1s ease-in-out infinite;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Error State */
+      .error-message {
+        background-color: rgba(239, 68, 68, 0.1);
+        color: #ef4444;
+        padding: 1rem;
+        border-left: 4px solid #ef4444;
+        margin: 1rem 0;
+      }
+
+      /* Modal Styles */
+      .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--transition);
+      }
+
+      .modal-overlay.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .modal {
+        background-color: var(--bg-color);
+        box-shadow: var(--shadow-lg);
+        width: 90%;
+        max-width: 500px;
+        padding: 2rem;
+        position: relative;
+        transform: translateY(-20px);
+        transition: var(--transition);
+      }
+
+      .modal-overlay.active .modal {
+        transform: translateY(0);
+      }
+
+      .modal-close {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: var(--text-light);
+        cursor: pointer;
+        transition: var(--transition);
+      }
+
+      .modal-close:hover {
+        color: var(--text-color);
+      }
+
+      .modal-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      .modal-description {
+        color: var(--text-light);
+        margin-bottom: 1.5rem;
+        font-weight: 500;
+      }
+
+      .modal-form-group {
+        margin-bottom: 1.5rem;
+      }
+
+      .modal-buttons {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .modal-close-btn {
+        flex: 1;
+        background-color: transparent;
+        color: var(--text-color);
+        border: 1px solid var(--border-color);
+        padding: 0.75rem 1rem;
+        border-radius: var(--radius);
+        font-weight: 700;
+        transition: var(--transition);
+        cursor: pointer;
+      }
+
+      .modal-close-btn:hover {
+        background-color: var(--border-color);
+      }
+
+      .modal-label {
+        display: block;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+      }
+
+      .modal-input {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius);
+        outline: none;
+        transition: var(--transition);
+        background-color: var(--bg-light);
+        color: var(--text-color);
+      }
+
+      .modal-input:focus {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+      }
+
+      .modal-checkbox-label {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        color: var(--text-light);
+      }
+
+      .modal-checkbox-label a {
+        text-decoration: underline;
+      }
+
+      .modal-checkbox {
+        margin-top: 3px;
+      }
+
+      .modal-submit {
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: var(--radius);
+        font-weight: 500;
+        width: 100%;
+        transition: var(--transition);
+      }
+
+      .modal-submit:hover {
+        background-color: var(--primary-hover);
+      }
+
+      /* Empty State */
+      .empty-state {
+        text-align: center;
+        padding: 3rem 1rem;
+        color: var(--text-light);
+      }
+
+      .empty-state i {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        opacity: 0.5;
+      }
+
+      .empty-state h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        color: var(--text-color);
+      }
+
+      /* Toast Notification System */
+      .toast-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .toast {
+        min-width: 300px;
+        max-width: 400px;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        box-shadow: var(--shadow-lg);
+        border-left: 4px solid var(--toast-info);
+        padding: 1rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        transform: translateX(120%);
+        transition: transform 0.3s ease;
+      }
+
+      .toast.show {
+        transform: translateX(0);
+      }
+
+      .toast.success {
+        border-left-color: var(--toast-success);
+      }
+
+      .toast.error {
+        border-left-color: var(--toast-error);
+      }
+
+      .toast.warning {
+        border-left-color: var(--toast-warning);
+      }
+
+      .toast-icon {
+        margin-right: 12px;
+        font-size: 1.2rem;
+      }
+
+      .toast-content {
+        flex: 1;
+      }
+
+      .toast-title {
+        font-weight: 600;
+        margin-bottom: 4px;
+        font-size: 1rem;
+      }
+
+      .toast-message {
+        color: var(--text-light);
+        font-size: 0.9rem;
+      }
+
+      .toast-close {
+        background: none;
+        border: none;
+        color: var(--text-light);
+        cursor: pointer;
+        font-size: 1rem;
+        padding: 4px;
+        align-self: flex-start;
+        transition: var(--transition);
+      }
+
+      .toast-close:hover {
+        color: var(--text-color);
+      }
+
+      /* Footer Styles */
+      footer {
+        background-color: var(--bg-color);
+        padding: 2rem 0;
+        text-align: center;
+        color: var(--text-light);
+        margin-top: 3rem;
+        border-top: 1px solid var(--border-color);
+      }
+
+      .modal-success {
+        background-color: rgba(16, 185, 129, 0.1);
+        border-left: 4px solid var(--toast-success);
+        padding: 1rem;
+        margin-top: 1rem;
+        display: none;
+      }
+
+      .modal-success-icon {
+        color: var(--toast-success);
+        margin-right: 10px;
+      }
+
+      .modal-success-title {
+        font-weight: 600;
+        margin-bottom: 4px;
+      }
+
+      .modal-success-content {
+        display: flex;
+        align-items: flex-start;
+      }
+
+      .modal-form-wrapper {
+        transition: all 0.3s ease;
+      }
+
+      .modal-success-message {
+        color: var(--text-light);
+      }
+
+      /* Responsive Design */
+      @media (min-width: 1600px) {
+        .resources-grid {
+          grid-template-columns: repeat(5, 1fr);
+        }
+      }
+
+      @media (max-width: 1200px) {
+        .resources-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media (max-width: 900px) {
+        .resources-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1.5rem;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .resources-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .profile-image {
+          width: 100px;
+          height: 100px;
+        }
+
+        .profile-name {
+          font-size: 1.5rem;
+        }
+
+        .modal {
+          padding: 1.5rem;
+        }
+
+        .toast {
+          min-width: auto;
+          max-width: 90%;
+          left: 5%;
+          right: 5%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section with Profile -->
+    <header>
+      <div class="theme-toggle">
+        <button id="themeToggle" class="theme-toggle-btn">
+          <i class="fas fa-moon fa-lg"></i>
+        </button>
+      </div>
+      <div class="profile">
+        <img
+          src="profile.jpg"
+          alt="Lakshay Kumar Resources"
+          class="profile-image"
+        />
+        <h1 class="profile-name">Lakshay Kumar</h1>
+        <p class="profile-subtitle">
+          Linky • GenAI Engineer @ Zato • Co-Founder ~ Konnect-AI • Data Science
+          & Machine Learning • Community Speaker • Beta Microsoft Learn Student
+          Ambassador • Author ~ From Data to World •
+        </p>
+      </div>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-container">
+      <div class="search-bar">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search resources..."
+          list="resourceSuggestions"
+        />
+        <datalist id="resourceSuggestions">
+          <!-- Will be populated dynamically with JavaScript -->
+        </datalist>
+        <button type="submit" id="searchButton">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Resources Grid Section -->
+    <section class="resources-container">
+      <h2 class="section-title">Resources</h2>
+
+      <!-- Loading State -->
+      <div id="loadingContainer" class="loading-container">
+        <div class="loading-spinner"></div>
+        <p>Loading resources...</p>
+      </div>
+
+      <!-- Error State -->
+      <div id="errorContainer" class="error-message" style="display: none">
+        <p>Could not load resources. Please try again later.</p>
+      </div>
+
+      <!-- Resources Grid -->
+      <div id="resourcesGrid" class="resources-grid">
+        <!-- Resources will be populated here dynamically -->
+      </div>
+
+      <!-- Empty State -->
+      <div id="emptyState" class="empty-state" style="display: none">
+        <i class="fas fa-search"></i>
+        <h3>No resources found</h3>
+        <p>Try adjusting your search or check back later for new content.</p>
+      </div>
+    </section>
+
+    <!-- Email Modal -->
+    <div class="modal-overlay" id="resourceModal">
+      <div class="modal">
+        <button class="modal-close" onclick="closeModal()">
+          <i class="fas fa-times"></i>
+        </button>
+        <h2 class="modal-title" id="modalTitle">Get Resource</h2>
+        <p class="modal-description" id="modalDescription">
+          Enter your email below, and I'll send you this resource right away.
+        </p>
+        <div id="modalFormWrapper" class="modal-form-wrapper">
+          <form id="resourceForm">
+            <input type="hidden" id="resourceId" value="" />
+            <div class="modal-form-group">
+              <label for="email" class="modal-label">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                class="modal-input"
+                placeholder="your.email@example.com"
+                required
+              />
+            </div>
+            <div class="modal-form-group">
+              <div style="display: flex; align-items: flex-start; gap: 10px">
+                <input
+                  type="checkbox"
+                  id="termsCheckbox"
+                  class="modal-checkbox"
+                  required
+                />
+                <label for="termsCheckbox" class="modal-checkbox-label">
+                  I agree to the
+                  <a
+                    href="https://docs.google.com/document/d/1Vp3T7EOzqbfqRdMIh1Ph1eWjpfw9GIaGzP86Ron7MGc/edit?usp=sharing"
+                    target="_blank"
+                    >Terms & Conditions</a
+                  >
+                  and
+                  <a
+                    href="https://docs.google.com/document/d/1Vp3T7EOzqbfqRdMIh1Ph1eWjpfw9GIaGzP86Ron7MGc/edit?usp=sharing"
+                    target="_blank"
+                    >Privacy Policy</a
+                  >
+                </label>
+              </div>
+            </div>
+            <div class="modal-buttons">
+              <button type="submit" class="modal-submit">
+                Send Me This Resource
+              </button>
+              <button
+                type="button"
+                class="modal-close-btn"
+                onclick="closeModal()"
+              >
+                Close
+              </button>
+            </div>
+          </form>
+        </div>
+        <div id="modalSuccess" class="modal-success">
+          <div class="modal-success-content">
+            <i class="fas fa-check-circle modal-success-icon"></i>
+            <div>
+              <div class="modal-success-title">Success!</div>
+              <div class="modal-success-message" id="successMessage"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Lakshay Kumar. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      // API URL for fetching resources
+      const API_URL =
+        "https://script.google.com/macros/s/AKfycbwly1QSY-Cded-qK9_pyGkF5cY8MRrN8aXk59Ntq7pOHLvFBS9Gp_xOUN-qhIkj3ove/exec";
+
+      // DOM Elements
+      const resourcesGrid = document.getElementById("resourcesGrid");
+      const loadingContainer = document.getElementById("loadingContainer");
+      const errorContainer = document.getElementById("errorContainer");
+      const emptyState = document.getElementById("emptyState");
+      const searchInput = document.getElementById("searchInput");
+      const searchButton = document.getElementById("searchButton");
+      const datalist = document.getElementById("resourceSuggestions");
+      const toastContainer = document.getElementById("toastContainer");
+
+      // Store all resources
+      let allResources = [];
+
+      // Theme Toggle Functionality
+      const themeToggleBtn = document.getElementById("themeToggle");
+      const htmlElement = document.documentElement;
+
+      // Set initial icon based on theme
+      window.addEventListener("DOMContentLoaded", () => {
+        if (htmlElement.classList.contains("light-theme")) {
+          themeToggleBtn.innerHTML = '<i class="fas fa-sun fa-lg"></i>';
+        } else {
+          themeToggleBtn.innerHTML = '<i class="fas fa-moon fa-lg"></i>';
+        }
+
+        // Fetch resources when the page loads
+        fetchResources();
+      });
+
+      function toggleTheme() {
+        if (htmlElement.classList.contains("light-theme")) {
+          // Switch to dark theme
+          htmlElement.classList.remove("light-theme");
+          themeToggleBtn.innerHTML = '<i class="fas fa-moon fa-lg"></i>';
+        } else {
+          // Switch to light theme
+          htmlElement.classList.add("light-theme");
+          themeToggleBtn.innerHTML = '<i class="fas fa-sun fa-lg"></i>';
+        }
+      }
+
+      themeToggleBtn.addEventListener("click", toggleTheme);
+
+      // Toast Notification System
+      function showToast(title, message, type = "info", duration = 5000) {
+        // Create toast element
+        const toast = document.createElement("div");
+        toast.className = `toast ${type}`;
+
+        // Set toast content
+        toast.innerHTML = `
+                <div class="toast-icon">
+                    <i class="fas ${getIconForToastType(type)}"></i>
+                </div>
+                <div class="toast-content">
+                    <div class="toast-title">${title}</div>
+                    <div class="toast-message">${message}</div>
+                </div>
+                <button class="toast-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            `;
+
+        // Add to container
+        toastContainer.appendChild(toast);
+
+        // Show toast with animation
+        setTimeout(() => {
+          toast.classList.add("show");
+        }, 10);
+
+        // Setup close button
+        const closeBtn = toast.querySelector(".toast-close");
+        closeBtn.addEventListener("click", () => {
+          closeToast(toast);
+        });
+
+        // Auto close after duration
+        setTimeout(() => {
+          closeToast(toast);
+        }, duration);
+      }
+
+      function closeToast(toast) {
+        // Hide with animation
+        toast.classList.remove("show");
+
+        // Remove after animation completes
+        setTimeout(() => {
+          toast.remove();
+        }, 300);
+      }
+
+      function getIconForToastType(type) {
+        switch (type) {
+          case "success":
+            return "fa-check-circle";
+          case "error":
+            return "fa-exclamation-circle";
+          case "warning":
+            return "fa-exclamation-triangle";
+          default:
+            return "fa-info-circle";
+        }
+      }
+
+      // Fetch Resources from API
+      async function fetchResources() {
+        showLoading(true);
+
+        try {
+          const response = await fetch(API_URL);
+
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+
+          const data = await response.json();
+          allResources = data;
+
+          // Check if we have resources
+          if (allResources.length === 0) {
+            showEmptyState(true);
+          } else {
+            displayResources(allResources);
+            populateAutocomplete(allResources);
+          }
+
+          showLoading(false);
+        } catch (error) {
+          console.error("Error fetching resources:", error);
+          showError(true);
+          showLoading(false);
+        }
+      }
+
+      // Display Resources in Grid
+      function displayResources(resources) {
+        // Clear the grid first
+        resourcesGrid.innerHTML = "";
+
+        if (resources.length === 0) {
+          showEmptyState(true);
+          return;
+        }
+
+        showEmptyState(false);
+
+        // Create a card for each resource
+        resources.forEach((resource) => {
+          // Format the date
+          const date = new Date(resource.date_posted);
+          const formattedDate = date.toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          });
+
+          // Create the resource card
+          const card = document.createElement("div");
+          card.className = "resource-card";
+
+          // Determine image URL - use the direct image_url if available, otherwise use placeholder
+          // const imageUrl = resource.image_url || `/api/placeholder/400/200`;
+
+          card.innerHTML = `
+                    <div class="resource-content">
+                        <h3 class="resource-title">${resource.title}</h3>
+                        <p class="resource-date">${formattedDate}</p>
+                        <p class="resource-description">${resource.description}</p>
+                        <button class="resource-button" data-id="${resource.id}" data-title="${resource.title}">Get Resource</button>
+                    </div>
+                `;
+
+          // Add card to the grid
+          resourcesGrid.appendChild(card);
+
+          // Add event listener to the button
+          const button = card.querySelector(".resource-button");
+          button.addEventListener("click", function () {
+            openModal(this.dataset.id, this.dataset.title);
+          });
+        });
+      }
+
+      // Populate Autocomplete
+      function populateAutocomplete(resources) {
+        // Clear existing options
+        datalist.innerHTML = "";
+
+        const suggestions = new Set();
+
+        // Extract unique words from resource titles and descriptions
+        resources.forEach((resource) => {
+          // Add titles as suggestions
+          suggestions.add(resource.title);
+
+          // Extract meaningful words from descriptions (longer than 3 characters)
+          const words = resource.description
+            .split(/\s+/)
+            .filter((word) => word.length > 3)
+            .map((word) => word.replace(/[.,;:!?]/g, ""));
+
+          words.forEach((word) => suggestions.add(word));
+        });
+
+        // Create option elements for datalist
+        suggestions.forEach((suggestion) => {
+          const option = document.createElement("option");
+          option.value = suggestion;
+          datalist.appendChild(option);
+        });
+      }
+
+      // Search Functionality
+      function performSearch() {
+        const searchTerm = searchInput.value.toLowerCase().trim();
+
+        if (searchTerm === "") {
+          // If search is empty, show all resources
+          displayResources(allResources);
+          return;
+        }
+
+        // Filter resources based on search term
+        const filteredResources = allResources.filter((resource) => {
+          const title = resource.title.toLowerCase();
+          const description = resource.description.toLowerCase();
+          const date = new Date(resource.date_posted)
+            .toLocaleDateString("en-US", {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })
+            .toLowerCase();
+
+          return (
+            title.includes(searchTerm) ||
+            description.includes(searchTerm) ||
+            date.includes(searchTerm)
+          );
+        });
+
+        // Display filtered resources
+        displayResources(filteredResources);
+      }
+
+      searchButton.addEventListener("click", performSearch);
+      searchInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+          performSearch();
+        }
+      });
+
+      // Resource Modal Functionality
+      let currentResource = "";
+
+      function openModal(resourceId, resourceTitle) {
+        currentResource = resourceTitle;
+        document.getElementById("resourceId").value = resourceId;
+        document.getElementById("modalTitle").textContent = `${resourceTitle}`;
+        document.getElementById("resourceModal").classList.add("active");
+        document.body.style.overflow = "hidden";
+
+        document.getElementById("modalFormWrapper").style.display = "block";
+        document.getElementById("modalSuccess").style.display = "none";
+        document.getElementById("modalDescription").style.display = "block";
+        document.getElementById("resourceForm").reset();
+      }
+      function showSuccessInModal(email) {
+        // Hide the form and description
+        document.getElementById("modalFormWrapper").style.display = "none";
+        document.getElementById("modalDescription").style.display = "none";
+
+        // Update success message
+        document.getElementById(
+          "successMessage"
+        ).textContent = `"${currentResource}" will be sent to ${email}`;
+
+        // Show the success message
+        document.getElementById("modalSuccess").style.display = "block";
+
+        // Automatically close the modal after 5 seconds
+        setTimeout(() => {
+          closeModal();
+        }, 5000);
+      }
+      function closeModal() {
+        document.getElementById("resourceModal").classList.remove("active");
+        document.body.style.overflow = "auto";
+        // Reset form
+        document.getElementById("resourceForm").reset();
+      }
+
+
+
+function sendResource(event) {
+  event.preventDefault();
+
+  const emailInput = document.getElementById("email");
+  const termsCheckbox = document.getElementById("termsCheckbox");
+  const resourceId = document.getElementById("resourceId").value;
+
+  const isFormValid = emailInput.checkValidity() && termsCheckbox.checkValidity();
+  if (!isFormValid) return;
+
+  const email = emailInput.value;
+  const currentDate = new Date().toISOString();
+
+  fetch("https://checkip.amazonaws.com/")
+    .then((res) => res.text())
+    .then((ip) => {
+      const cleanIp = ip.trim();
+
+      const formData = {
+        date: currentDate,
+        resourceId: resourceId,
+        email: email,
+        resourceTitle: currentResource,
+        termsAccepted: true,
+        ip: cleanIp,
+      };
+
+      console.log(formData);
+
+      // Send POST request
+      fetch(API_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+        .then((res) => res.json())
+        .then((response) => {
+          console.log("Success:", response);
+          showSuccessInModal(email);
+        })
+        .catch((error) => {
+          console.error("API POST failed:", error);
+          showSuccessInModal(email); // Fallback
+        });
+    })
+    .catch((error) => {
+      console.error("Error fetching IP address:", error);
+
+      const formData = {
+        date: currentDate,
+        resourceId: resourceId,
+        email: email,
+        resourceTitle: currentResource,
+        termsAccepted: true,
+        ip: "unknown",
+      };
+
+      console.log(formData);
+
+      fetch(API_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+        .then((res) => res.json())
+        .then((response) => {
+          console.log("Success (no IP):", response);
+          showSuccessInModal(email);
+        })
+        .catch((error) => {
+          console.error("API POST failed:", error);
+          showSuccessInModal(email); // Fallback
+        });
+    });
+}
+
+      // Helper functions for UI states
+      function showLoading(show) {
+        loadingContainer.style.display = show ? "block" : "none";
+        if (show) {
+          resourcesGrid.style.display = "none";
+        } else {
+          resourcesGrid.style.display = "grid";
+        }
+      }
+
+      function showError(show) {
+        errorContainer.style.display = show ? "block" : "none";
+      }
+
+      function showEmptyState(show) {
+        emptyState.style.display = show ? "block" : "none";
+        resourcesGrid.style.display = show ? "none" : "grid";
+      }
+
+      // Close modal when clicking outside
+      window.onclick = function (event) {
+        const modal = document.getElementById("resourceModal");
+        if (event.target === modal) {
+          closeModal();
+        }
+      };
+
+      // For the resource form submission
+      document
+        .getElementById("resourceForm")
+        .addEventListener("submit", sendResource);
+    </script>
+  </body>
+</html>
