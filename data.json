@@ -1,0 +1,26 @@
+[
+    {
+      "id": 2,
+      "title": "File Transfer over WiFi without internet using python",
+      "description": "Transfer files wirelessly between two devices connected to the same WiFi network without using the internet, using a simple Python script with socket programming and a lightweight file server.",
+      "date_posted": "2025-04-11T18:30:00.000Z",
+      "drive_image_url": "-",
+      "image_url": "-"
+    },
+    {
+      "id": 1,
+      "title": "Face Recognition with simple numpy",
+      "description": "A NumPy-based face recognition system using the Eigenfaces algorithm. This lightweight implementation processes images into eigenvectors for facial analysis and identification, with no external ML dependencies",
+      "date_posted": "2025-03-31T18:30:00.000Z",
+      "drive_image_url": "https://drive.google.com/file/d/1Sv5NzApi5hGjcjWeLkVO2DmuKVlH4HVM/view",
+      "image_url": "https://drive.usercontent.google.com/download?id=1Sv5NzApi5hGjcjWeLkVO2DmuKVlH4HVM"
+    },
+    {
+      "id": 3,
+      "title": "Chat over WiFi",
+      "description": "Building a chat server over a network accessible only to people connected through a same wifi aiming for secure way of communication",
+      "date_posted": "2025-01-04T18:30:00.000Z",
+      "drive_image_url": "-",
+      "image_url": "-"
+    }
+  ]
